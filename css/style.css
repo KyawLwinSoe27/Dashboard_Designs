@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+:root {
+    --primary-bg-main: #f9f9f9;
+    --primary-color: #ffffff;
+    --chart-one: #eeebf4;
+    --chart-two: #775da6;
+    --chart-three: #eeebf4;
+    --secondary: #929292;
+    --text-color: #202020;
+}
+.sidebar{
+    background-color: var(--primary-color);
+}
+.content{
+    background-color: var(--primary-bg-main);
+    overflow: scroll;
+}
+.stk{
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+}
+.name{
+    
+}
+.pos{
+    
+}
+.left-role{
+    width: 25%;
+}
+.mySelf{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.side-header{
+    margin-top: 25px;
+}
+a,li {
+    list-style: none;
+    text-decoration: none;
+}
+.li-folder{
+    background-color: var(--primary-color);
+    color: #00000099;
+    padding: 10px;
+    cursor: pointer;
+}
+.li-folder:hover{
+    background-color: var(--chart-one);
+    transition: .5s;
+    border-radius: 10px;
+}
+.search{
+    border: none !important;
+    background-color: var(--primary-bg-main) !important;
+}
+.search-group{
+    border-radius: 20px;
+    background-color: var(--primary-bg-main);
+}
+.close-btn{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1px;
+}
+.close-btn:hover{
+    background-color: var(--secondary);
+    transition: .5s;
+}
+.open-btn{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1px;
+}
+.open-btn:hover{
+    background-color: var(--secondary);
+    transition: .5s;
+}
+.card{
+    border: none !important;
+}
+@media screen and (max-width: 768px) {
+    .sidebar{
+        position: fixed;
+        width: 50% !important;
+        z-index: 2001;
+        margin-left: -100%;
+    }
+    .name{
+        font-size: 10px !important;
+    }
+    .pos{
+        font-size: 10px !important;
+    }
+    .left-role{
+        width: 50% !important;
+    }
+}

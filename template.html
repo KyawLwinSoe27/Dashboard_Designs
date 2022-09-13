@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Design</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./Library/boostrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Library/font_awesome/css/all.min.css" />
+  </head>
+  <body>
+    <section class="container-fluid main">
+      <div class="row">
+        <div class="col-12 col-lg-2 col xl-2 vh-100 sidebar">
+          <div
+            class="side-header d-flex align-items-center justify-content-evenly"
+          >
+            <div class="p-1 text-danger close-btn fs-3 d-lg-none">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <img src="./assets/img/Amal Shop Logo.png" class="logo" alt="" />
+            <h5 class="text-uppercase fs-6 mb-0">Amal Business</h5>
+          </div>
+          <div class="mt-4 ps-2">
+            <ul class="p-0">
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-folder"></i>
+                <li class="ms-3">Overview</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-shop"></i>
+                <li class="ms-3">Business</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-badge-dollar"></i>
+                <li class="ms-3">Sales</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <li class="ms-3">Transcations</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-file"></i>
+                <li class="ms-3">Expenses</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-file-chart-column"></i>
+                <li class="ms-3">Reports</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-folder-open"></i>
+                <li class="ms-3">Projects</li>
+              </div>
+              <div class="li-folder d-flex align-items-center my-3">
+                <i class="fa-solid fa-address-card"></i>
+                <li class="ms-3">Contacts</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-10 col xl-10 vh-100 content">
+          <div class="row stk my-1">
+            <div class="col-12">
+              <div
+                class="navbar rounded d-flex align-items-center justify-content-between"
+              >
+                <div class="p-1 text-danger open-btn fs-3 me-2 d-lg-none">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <div
+                  class="input-group mb-1 ms-3 w-25 d-none d-lg-flex search-group"
+                >
+                  <button class="btn rounded" type="button" id="button-addon1">
+                    <i class="fa-brands fa-searchengin"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control search rounded-3"
+                    placeholder="Search..."
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                </div>
+                <div
+                  class="left-role d-flex justify-content-evenly me-3 align-items-center"
+                >
+                  <div>
+                    <i class="fa-solid fa-circle-question"></i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-bell"></i>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/kls.jpeg" alt="" class="mySelf" />
+                    <div class="ms-1">
+                      <p class="name mb-0">Kyaw Lwin Soe</p>
+                      <p class="pos mb-0 text-black-50">Admin</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="">
+                <h3 class="header-text mt-3 ms-3">Hi, Kyaw</h3>
+                <div class="text-group d-flex justify-content-between">
+                  <p class="ms-3 text-black-50">
+                    Here's what's going on with Amal Business Group Finance
+                  </p>
+                  <div class="switch-icon me-3">
+                    <div class="form-check form-switch">
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                        >Private</label
+                      >
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="flexSwitchCheckDefault"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="vh-100">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="card" style="height: 264px">
+                      <div class="card-body">
+                        <h5 class="card-title">Business Bank Account</h5>
+                        <div class="d-flex justify-content-evenly">
+                          <div>
+                            <div>
+                              <h5>1,111.00</h5>
+                              <p>Balance in App</p>
+                            </div>
+                            <div>
+                              <h5>4,808.00</h5>
+                              <p>Statement Balance</p>
+                            </div>
+                          </div>
+                          <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas
+                              id="myChart3"
+                              width="300"
+                              height="250"
+                            ></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Business Performance</h5>
+                        <div
+                          class="first d-flex justify-content-evenly align-items-center"
+                        >
+                          <div>
+                            <h5>1.72</h5>
+                            <p>Curreent Ratio</p>
+                          </div>
+                          <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas id="myChart1"></canvas>
+                          </div>
+                        </div>
+                        <div
+                          class="first d-flex justify-content-evenly align-items-center"
+                        >
+                          <div>
+                            <h5>8.9,9%</h5>
+                            <p>Gross Profit %</p>
+                          </div>
+                          <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas id="myChart2"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 mt-3">
+                    <div class="card" style="height: 264px">
+                      <div class="card-body">
+                        <h5 class="card-title">Business Saving Account</h5>
+                        <div class="d-flex justify-content-evenly align-items-center">
+                          <div>
+                            <h5>12,232.67</h5>
+                            <p>Statement Balance</p>
+                          </div>
+                          <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas
+                              id="myChart4"
+                              width="300"
+                              height="250"
+                            ></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="card" style="height: 264px">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <h5 class="card-title">Total Cash In and Out</h5>
+                          <div class="d-flex align-items-center justify-content-evenly">
+                            <span style="width: 10px; height:10px; background:#775da6; border-radius: 50%;"></span>
+                            <p class="mb-0 ms-1 me-1">Cash In</p>
+                            <span style="width: 10px; height:10px; background:#abdfe7; border-radius: 50%;"></span>
+                            <p class="mb-0 ms-1">Cash Out</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-evenly align-items-center">
+                          <div>
+                            <h5>12,232.67</h5>
+                            <p>Statement Balance</p>
+                          </div>
+                          <div>
+                            <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas id="myChart5"></canvas>
+                          </div>
+                          <div
+                            class="chart-container"
+                            style="height: 100px; width: 200px"
+                          >
+                            <canvas id="myChart6"></canvas>
+                          </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 bg-gradient"></div>
+                  <div class="col-12 col-lg-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="vh-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Library/boostrap/js/bootstrap.min.js"></script>
+    <script src="./Library//font_awesome/js/all.min.js"></script>
+    <script src="./Library/jQuery/jquery.min.js"></script>
+    <script src="./Library/chart_js/chart.min.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
